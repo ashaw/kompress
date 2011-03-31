@@ -11,7 +11,7 @@ Clone the repo and then `sudo rake install`. Will be on Rubygems soon.
     k = Kompress::CSS.new(big_css)
     k.css #=> compressed css
     
-    k = Kompress::HTML.new(html)
+    k = Kompress::HTML.new(big_html)
     k.html #=> compressed html
     
     
