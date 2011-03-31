@@ -1,4 +1,4 @@
-class Kompress
+module Kompress
   ROOT = File.expand_path "#{File.dirname __FILE__}/.."
 end
 

@@ -2,6 +2,10 @@
 
 A simple CSS compressor. It removes `\s*`.
 
+## Install
+
+`gem install kompress`
+
 ## Usage
 
     k = Kompress.new(big_css)
