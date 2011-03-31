@@ -10,18 +10,19 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Al Shaw"]
   s.date = %q{2011-03-31}
-  s.description = %q{A simple CSS minifier}
+  s.description = %q{A simple HTML and CSS compressor}
   s.email = %q{almshaw@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.markdown"
   ]
   s.files = [
     ".document",
     ".rspec",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.markdown",
     "Rakefile",
+    "kompress.gemspec",
     "lib/kompress.rb",
     "lib/kompress/kompress.rb",
     "lib/kompress/version.rb",
@@ -32,7 +33,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{A simple CSS minifier}
+  s.summary = %q{A simple HTML and CSS compressor}
   s.test_files = [
     "spec/kompress_spec.rb",
     "spec/spec_helper.rb"
