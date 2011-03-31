@@ -4,7 +4,7 @@ A simple CSS and HTML compressor. It removes `\s+`. Highly unstable/experimental
 
 ## Install
 
-Clone the repo and then `sudo rake install`. Will be on Rubygems soon.
+`gem install kompress`
 
 ## Usage
 
