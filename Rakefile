@@ -8,8 +8,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "kompress"
   gem.homepage = "http://github.com/ashaw/kompress"
   gem.license = "MIT"
-  gem.summary = %Q{A simple CSS compressor}
-  gem.description = %Q{A simple CSS compressor}
+  gem.summary = %Q{A simple HTML and CSS compressor}
+  gem.description = %Q{A simple HTML and CSS compressor}
   gem.email = "almshaw@gmail.com"
   gem.authors = ["Al Shaw"]
   gem.version = Kompress::VERSION

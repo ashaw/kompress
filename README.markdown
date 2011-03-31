@@ -1,6 +1,6 @@
 # Kompress
 
-A simple CSS compressor. It removes `\s*`.
+A simple CSS and HTML compressor. It removes `\s+`. Highly unstable/experimental at this point.
 
 ## Install
 
@@ -8,8 +8,12 @@ A simple CSS compressor. It removes `\s*`.
 
 ## Usage
 
-    k = Kompress.new(big_css)
+    k = Kompress::CSS.new(big_css)
     k.css #=> compressed css
+    
+    k = Kompress::HTML.new(html)
+    k.html #=> compressed html
+    
     
 # Copyright
 
