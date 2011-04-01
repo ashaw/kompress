@@ -29,7 +29,11 @@ module Kompress
     
     def initialize(html)
       @html = html
+      
       @html.gsub!(/(?:^|\s+?)(<.*?>)/, '\1')
+      
+      @html.gsub!(/(<.*?>)(?:\s+)$/,'\1')
+      
       @html
     end
   end

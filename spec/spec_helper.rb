@@ -60,6 +60,56 @@ CSS
 
 SMALL_CSS = small_css.strip
 
+BIG_HTML = <<-HTML
+<div id="banner"> 
+	<div class="wrapper"> 
+		<div id="banner-identity"> 
+                        <h1 id="banner-logo"><a href="/" class="pngfix">ProPublica</a></h1> 
+            			<p id="banner-tagline">Journalism in the public interest.</p> 
+		</div> 
+		<div id="banner-updates"> 
+			<form method="get" action="http://org2.democracyinaction.org/dia/api/process.jsp"> 
+				<input type="hidden" name="table" value="supporter"> 
+				<input type="hidden" name="key" value="0"> 
+				<input type="hidden" name="required" value="Email"> 
+				<input type="hidden" name="link" value="groups"> 
+				<input type="hidden" name="linkKey" value="90412"> 
+				<input type="hidden" name="redirect" value="http://www.propublica.org/about/thank-you"> 
+				<input type="hidden" name="Receive_Email" value="3">  
+				<input type="hidden" name="organization_KEY" value="6253"> 
+				<input type="hidden" name="email_trigger_KEYS" value="8405"> 
+				<p>Receive our top stories daily</p> 
+				<div class="form-row text-row"> 
+					<input type="text" class="text-input" id="subscribe-email" value="Subscribe via e-mail" name="Email" /> 
+					<input type="submit" value="Sign Up" class="btn-input" /> 
+				</div> 
+				<div class="form-row text-row"> 
+					 <input type="text" class="text-input" id="subscribe-zip" value="zip-code" name="Zip" /> <span>optional</span> 
+				</div> 
+			</form> 
+		 </div><!-- /#banner-updates --> 
+	</div><!--/.wrapper--> 
+</div><!--#banner--> 
+<div id="banner-nav"> 
+    <!--[if IE]>
+	  <link rel="stylesheet" href="http://www.propublica.org/css/ie.css?1301677503" type="text/css" media="screen" charset="utf-8" />
+	<![endif]--> 
+    <!--[if IE 7]>
+	  <link rel="stylesheet" href="http://www.propublica.org/css/ie7.css?1301677503" type="text/css" media="screen" charset="utf-8" />
+      <!--[if IE]>
+  	  <link rel="stylesheet" href="http://www.propublica.org/css/ie.css?1301677503" type="text/css" media="screen" charset="utf-8" />
+  	<![endif]--> 
+      <!--[if IE 7]>
+  	  <link rel="stylesheet" href="http://www.propublica.org/css/ie7.css?1301677503" type="text/css" media="screen" charset="utf-8" />
+  	<![endif]--> 
+HTML
+
+small_html = <<-HTML
+<div id="banner"><div class="wrapper"><div id="banner-identity"><h1 id="banner-logo"><a href="/" class="pngfix">ProPublica</a></h1><p id="banner-tagline">Journalism in the public interest.</p></div><div id="banner-updates"><form method="get" action="http://org2.democracyinaction.org/dia/api/process.jsp"><input type="hidden" name="table" value="supporter"><input type="hidden" name="key" value="0"><input type="hidden" name="required" value="Email"><input type="hidden" name="link" value="groups"><input type="hidden" name="linkKey" value="90412"><input type="hidden" name="redirect" value="http://www.propublica.org/about/thank-you"><input type="hidden" name="Receive_Email" value="3"><input type="hidden" name="organization_KEY" value="6253"><input type="hidden" name="email_trigger_KEYS" value="8405"><p>Receive our top stories daily</p><div class="form-row text-row"><input type="text" class="text-input" id="subscribe-email" value="Subscribe via e-mail" name="Email" /><input type="submit" value="Sign Up" class="btn-input" /></div><div class="form-row text-row"><input type="text" class="text-input" id="subscribe-zip" value="zip-code" name="Zip" /><span>optional</span></div></form></div><!-- /#banner-updates --></div><!--/.wrapper--></div><!--#banner--><div id="banner-nav"><!--[if IE]><link rel="stylesheet" href="http://www.propublica.org/css/ie.css?1301677503" type="text/css" media="screen" charset="utf-8" /><![endif]--><!--[if IE 7]><link rel="stylesheet" href="http://www.propublica.org/css/ie7.css?1301677503" type="text/css" media="screen" charset="utf-8" /><!--[if IE]><link rel="stylesheet" href="http://www.propublica.org/css/ie.css?1301677503" type="text/css" media="screen" charset="utf-8" /><![endif]--><!--[if IE 7]><link rel="stylesheet" href="http://www.propublica.org/css/ie7.css?1301677503" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+HTML
+
+SMALL_HTML = small_html.strip
+
 
 RSpec.configure do |config|
   
