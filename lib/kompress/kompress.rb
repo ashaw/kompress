@@ -30,8 +30,11 @@ module Kompress
     def initialize(html)
       @html = html
       
+      # take out spaces between the beginning or any number
+      # of spaces until a tag
       @html.gsub!(/(?:^|\s+?)(<.*?>)/, '\1')
       
+      # take out spaces between a tag and the end.
       @html.gsub!(/(<.*?>)(?:\s+)$/,'\1')
       
       @html
