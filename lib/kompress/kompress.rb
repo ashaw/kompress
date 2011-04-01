@@ -7,7 +7,10 @@ module Kompress
     
       # take out new lines
       @css.gsub!(/\n/,'')
-
+      
+      # take out comments
+      @css.gsub!(/(\/\*.*?\*\/)/,' ')
+      
       # take out spaces between selectors and rule blocks
       @css.gsub!(/([\.a-zA-Z0-9_\-\#]+?)\s*\{\s*([^\{\}\s])?/,'\1{\2')
 
@@ -15,10 +18,7 @@ module Kompress
       @css.gsub!(/\}\s*([\.a-zA-Z0-9_\-\#]+?)/,'}\1')
 
       # take out spaces between rules
-      @css.gsub!(/(:|;)(\s+)?([\.a-zA-Z_0-9]+)?/,'\1\3')
-
-      # take out comments
-      @css.gsub!(/(\/\*.*?\*\/)/,' ')
+      @css.gsub!(/(\:|;)(\s+)?([^;\:]+)?/,'\1\3')
 
       @css
     end
