@@ -1,7 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Kompress" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+describe "Kompress CSS" do
+  it "should compress css" do
+    k = Kompress::CSS.new(BIG_CSS)
+    k.css.should eql SMALL_CSS
   end
 end
